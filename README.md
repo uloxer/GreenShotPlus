@@ -1,15 +1,7 @@
-GreenShotPlus
-=============
+Greenshot - a free screenshot tool optimized for productivity
+=============================================================
 
-## Download and install on Windows
-
-**[Download GreenShotPlus-Setup.exe — Windows installer](https://github.com/uloxer/GreenShotPlus/releases/latest/download/GreenShotPlus-Setup.exe)**
-
-Run the EXE and choose **Install for me only** for installation without administrator rights.
-
-The installer is also under **[Releases → Assets](https://github.com/uloxer/GreenShotPlus/releases/latest)**. GitHub's **Code → Download ZIP** and **Source code (zip)** downloads contain source code, not the installer. The installer is currently unsigned.
-
-This is **GreenShotPlus**, a Windows Greenshot fork with compact quick colours and per-image engineering measurements. See [usage and development notes](docs/greenshotplus.md). The original editor and drawing architecture are retained.
+Welcome to the source repository for Greenshot.
 
 What is Greenshot?
 ------------------
@@ -66,7 +58,7 @@ IDE System Requirements:
 
 * Windows OS environment
 * Visual Studio 2026 (the native projects use the v145 C++ toolset), with the **Desktop development with C++** workload, MSVC v145 x64/x86 build tools, and a Windows 10 SDK
-* .NET SDK 10.0.100 or newer (Greenshot.Mcp targets .NET 10)
+* .NET SDK 10.0.114 or newer (Greenshot.Mcp targets .NET 10; older SDKs carry an ILCompiler with the Brotli vulnerability GHSA-p3jp-9v83-76w9)
 * .NET Framework 4.8 Developer Pack / targeting pack
 
 Build Instructions:

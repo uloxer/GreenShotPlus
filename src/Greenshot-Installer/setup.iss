@@ -1,7 +1,6 @@
-; GreenShotPlus full installer, with current-user installation as the default.
-#define AppDisplayName "GreenShotPlus"
-#define OutputSuffix "-Plus"
-#define PreferCurrentUser 1
+; Greenshot Full Installer
+#define AppDisplayName "Greenshot"
+#define OutputSuffix ""
 
 #include "includes\defines.iss"
 #include "includes\setup-header.iss"

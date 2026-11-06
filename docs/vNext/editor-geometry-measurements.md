@@ -1,4 +1,4 @@
-# GreenShotPlus
+# Editor geometry and measurement tools
 
 Based on upstream Windows Greenshot commit `f25a9bba85bdfc1857ff3f14ac16fb192890652a`. Normal capture, drawing, clipboard and export paths are retained.
 
@@ -87,11 +87,7 @@ The shared document style follows [LibreCAD's dimension preferences](https://doc
 
 ## Build and test
 
-The **GreenShotPlus installer** GitHub Actions workflow builds the full Windows installer and verifies a current-user install, installed-file hashes and uninstall on a disposable runner. The setup defaults to **install for me only**, using `%LOCALAPPDATA%\Programs\Greenshot` and a per-user uninstall entry. Choosing **install for all users** requires administrator rights. This installer updates an existing per-user Greenshot installation. Fork builds are unsigned; an organisation's application-control policy may require IT approval.
-
-The reproducible packaging entry point is `installer/build-greenshotplus.ps1`. It includes the existing plugins and native CLI/proxy programs. `installer/test-user-install.ps1` is restricted to disposable GitHub Actions runners.
-
-Use the upstream Windows prerequisites in the root README. A first standalone SDK build can generate credential-placeholder source files too late for inclusion; rerun after generation. Private credentials are unnecessary for editor tests; external uploads require their own configuration.
+Use the upstream Windows prerequisites in the root README. Private credentials are unnecessary for editor tests; external uploads require their own configuration.
 
 ```powershell
 dotnet build src/Greenshot.Tests/Greenshot.Tests.csproj -c Debug
